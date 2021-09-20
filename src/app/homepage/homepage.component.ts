@@ -29,7 +29,7 @@ export class HomepageComponent implements OnInit {
     return this.testForm.get("adfields") as FormArray  
   } 
 
-  newQuantity(): FormGroup {  
+  newFields(): FormGroup {  
     return this.fb.group({  
       Address: ''
        
@@ -37,7 +37,7 @@ export class HomepageComponent implements OnInit {
   }  
 
   addFields() {  
-    this.adfields().push(this.newQuantity());  
+    this.adfields().push(this.newFields());  
   }  
      
   removeFields(i:number) {  
